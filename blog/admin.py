@@ -3,6 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.utils.text import Truncator
 from .models import CustomUser, Article
 
+# Juphin added comment for testing
 
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('apercu_title', 'apercu_content', 'pub_date', 'state')
