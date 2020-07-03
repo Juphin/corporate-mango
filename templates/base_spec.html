@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% load static %}
+<head>
+   <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+   <title>{% block title %}Mon blog sur les crêpes bretonnes{% endblock %}</title>
+</head>
+<body>
+   <section id="content" class="login">
+       {% block content %}
+
+       {% endblock %}
+   </section>
+</body>
+</html>

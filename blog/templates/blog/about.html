@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Ma page d'acceuil {% endblock %}
+
+
+{% block active_about %} active {% endblock %}
+
+
+{% block content %}
+    <!--<img src="{% static 'publication/img/collins.png' %}" width="200">
+    <centre><h1>Bienvenue sur mon site</h1></centre>-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-4">CodingBlog</h1>
+                    <p class="lead">This is my first hosted django project, this codingBlog is going to help to see every publications
+                        that I will be publishing in the next week, each weeks, I will be putting some content on line, just to make
+                        sure it's work good.</p>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

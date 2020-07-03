@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Ma page d'acceuil {% endblock %}
+
+{% block active_home %} active {% endblock %}
+
+{% block content %}
+    <!--<img src="{% static 'publication/img/collins.png' %}" width="200">
+    <centre><h1>Bienvenue sur mon site</h1></centre>-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+
+                {% for article in articles %}
+                    <div class="card mb-3">
+                      <div class="card-header" style="background-color:#004D40; color:#fff; font-size:20px">
+                        {{ article.title }}
+                      </div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p style="font-size:16px">{{ article.content }}</p>
+                          <footer class="blockquote-footer">{{ article.pub_date }}</footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
