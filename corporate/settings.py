@@ -26,7 +26,7 @@ SECRET_KEY = 'we5@6c4ifeek(wywielr+jgbxg4o$a*pb=$b+1tl#f=nla19w_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['corporate.herokuapp.com']
+ALLOWED_HOSTS = ['corporate-mango.herokuapp.com']
 
 AUTH_USER_MODEL = 'blog.CustomUser'
 # Application definition
