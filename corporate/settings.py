@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import django_heroku
-import dj_database_url
+#import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -79,11 +79,13 @@ WSGI_APPLICATION = 'corporate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'corporatedb',
-        'USER': 'postgres',
-        'PASSWORD': 'turbo',
-        'HOST': 'localhost',
+        'NAME': 'd9r8t6oluiuad7',
+        'USER': 'wfizmutxfspykg',
+        'PASSWORD': '4f27d1799a5a4677afaf844f833615b1eeed95f0eb9eeaf86b578a09dc740f62',
+        'HOST': 'ec2-35-153-12-59.compute-1.amazonaws.com',
         'PORT': '5432',
+        'URI': 'postgres://wfizmutxfspykg:4f27d1799a5a4677afaf844f833615b1eeed95f0eb9eeaf86b578a09dc740f62@ec2-35-153-12-59.compute-1.amazonaws.com:5432/d9r8t6oluiuad7',
+        'Heroku CLI': 'heroku pg:psql postgresql-fitted-23808 --app corporate-mango'
     }
 }
 
@@ -131,4 +133,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 django_heroku.settings(locals())
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
